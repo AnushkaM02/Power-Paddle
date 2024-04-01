@@ -14,6 +14,13 @@ public class ScoreManager : MonoBehaviour
     public Text player1ScoreText;
     public Text player2ScoreText;
 
+    private int currentSceneIndex;
+
+    void Start()
+    {
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+    }
+
     public void Player1Goal()
     {
         player1Score++;
@@ -30,9 +37,26 @@ public class ScoreManager : MonoBehaviour
 
     private void CheckScore()
     {
-        if(player1Score==scoreToReach || player2Score == scoreToReach)
+        if (currentSceneIndex == 1)
         {
-            SceneManager.LoadScene(2);
+            if (player1Score == scoreToReach || player2Score == scoreToReach)
+            {
+                SceneManager.LoadScene(2);
+            }
+        }
+        else if (currentSceneIndex == 2)
+        {
+            if (player1Score == scoreToReach || player2Score == scoreToReach)
+            {
+                SceneManager.LoadScene(3);
+            }
+        }
+        else if (currentSceneIndex == 3)
+        {
+            if (player1Score == scoreToReach || player2Score == scoreToReach)
+            {
+                SceneManager.LoadScene(4);
+            }
         }
     }
 }

@@ -1016,9 +1016,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30cb490a2a51c403e8dbb58f8560734a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSpeed: 5
+  startSpeed: 8
   extraSpeed: 1
-  maxExtraSpeed: 5
+  maxExtraSpeed: 8
   player1Start: 1
 --- !u!114 &1306048575
 MonoBehaviour:
@@ -1753,7 +1753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 951db86e31c5c47c9bf1aeb0565bbe91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreToReach: 5
+  scoreToReach: 3
   player1ScoreText: {fileID: 874982950}
   player2ScoreText: {fileID: 2100693757}
 --- !u!1 &2100693755

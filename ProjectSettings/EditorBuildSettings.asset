@@ -12,8 +12,14 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 510088ec13a9e4a20939969d70d7142c
   - enabled: 1
-    path: Assets/Scenes/Pong Game.unity
+    path: Assets/Scenes/Level1.unity
     guid: a503bb898ebf345a885195c8dee48339
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: 809dcee72dcc540ed8c2c607760c4fde
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: 774222b8290a04888912ea1c71138864
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 4a9cce724b3a947869f1b5037568dcc6
