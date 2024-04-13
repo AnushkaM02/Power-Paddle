@@ -36,10 +36,16 @@ public class Player2 : MonoBehaviour
                 rb.transform.position = new Vector2(0, currentPos2.y);
                 racketDirection = new Vector2(0, dirY).normalized;
             }
-
             else
             {
                 racketDirection = new Vector2(dirX, dirY).normalized;
+            }
+
+            if (rb.transform.position.x > 8.7)
+            {
+                Vector2 currentPos = rb.transform.position;
+                rb.transform.position = new Vector2(8.7f, currentPos.y);
+                racketDirection = new Vector2(0, dirY).normalized;
             }
         }
     }
